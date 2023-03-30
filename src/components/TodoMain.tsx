@@ -33,17 +33,9 @@ function TodoMain() {
     }
 
     function filterTodos () {
-        console.log('term ',term);
-        
-        console.log('allTodos in filterTodos berfore filtering', allTodos);
-        
         const filtered = allTodos.filter(t => {
-            console.log(t.title);
             return t.title.includes(term);
         })
-        console.log('filtered', filtered);
-        // console.log('alltodos', allTodos);
-        
         setFilteredTodos([...filtered]);
     }
     useEffect(() => {

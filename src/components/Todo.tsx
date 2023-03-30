@@ -23,7 +23,6 @@ const Todo = ({item, update, remove }: TodoProps) => {
             setEditing(false);
             update({...item, title});
         }
-        console.log(e.key, e.metaKey);
     }
     return (
         <div key={item.id} className='w-full py-3 px-4 bg-blue-100 rounded-md my-1 flex justify-between items-center'>
